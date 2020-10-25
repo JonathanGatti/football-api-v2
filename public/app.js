@@ -1,4 +1,4 @@
-import {url} from './config'
+import {url} from '../config'
 const playerInput = document.querySelector('#player-input');
 const teamNameInput = document.querySelector('#name-input');
 const submit = document.querySelector('#submit');
