@@ -1,6 +1,7 @@
 const playerInput = document.querySelector('#player-input');
 const teamNameInput = document.querySelector('#name-input');
 const submit = document.querySelector('#submit');
+const getPlayer = document.querySelector('#get-player');
 const list = document.querySelector('#list');
 
 const config = {
@@ -34,8 +35,12 @@ async function fetchData(name){
 
 async function getData() {
     const res = await axios.get('/api/teams')
-    console.log(res)
+    console.log(res.data)
 }
+getPlayer.addEventListener('click', ()=>{
+  getData()
+})
+
 
 playerInput.addEventListener('keypress', async (e)=>{
   if(e.which === 13){

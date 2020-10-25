@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
+var cors = require('cors')
 const teamsRoutes = require('./routes/teams');
 const bodyParser = require('body-parser');
 
+app.use(cors())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use('/api/teams', teamsRoutes);
@@ -16,7 +18,7 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(3000 || process.env.PORT,  ()=>{
-  console.log("server listenig on 3000")
+app.listen(3001 || process.env.PORT,  ()=>{
+  console.log("server listenig on 3001")
 });
   
