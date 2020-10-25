@@ -1,8 +1,10 @@
+import {url} from './config'
 const playerInput = document.querySelector('#player-input');
 const teamNameInput = document.querySelector('#name-input');
 const submit = document.querySelector('#submit');
 const getPlayer = document.querySelector('#get-player');
 const list = document.querySelector('#list');
+
 
 const config = {
   api_key: '89f56fc814mshaffde0d4f2ea23cp144e32jsnf8dcdcfa56ff'
@@ -15,7 +17,7 @@ const team = {
   teamPlayers: [],
 }
 
-const url = 'https://api-football-v1.p.rapidapi.com/v2/players/search/';
+
 
 async function fetchData(name){
   try {
