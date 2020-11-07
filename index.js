@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(3001 || process.env.PORT,  ()=>{
-  console.log("server listenig on 3001")
+app.listen(3002 || process.env.PORT,  ()=>{
+  console.log("server listenig on 3002")
 });
   

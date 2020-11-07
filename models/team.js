@@ -6,6 +6,9 @@ teamSchema = new mongoose.Schema({
     },
     teamPlayers: {
       type: Array
+    },
+    teamModule: {
+      type: Array
     }
 })
 
