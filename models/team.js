@@ -9,6 +9,9 @@ teamSchema = new mongoose.Schema({
     },
     teamModule: {
       type: Array
+    },
+    userId: {
+      type: String
     }
 })
 
