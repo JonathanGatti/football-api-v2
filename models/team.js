@@ -12,6 +12,12 @@ teamSchema = new mongoose.Schema({
     },
     userId: {
       type: String
+    },
+    logo: {
+      type: String
+    },
+    rating: {
+      type: Number
     }
 })
 

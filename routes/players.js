@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
 })
 
 router.get('/:playerId', (req, res) => {
-  db.Player.findById(req.params.teamId)
+  db.Player.findById(req.params.playerId)
   .then(player => {
     res.json(player)
   })
@@ -33,7 +33,7 @@ router.get('/:playerId', (req, res) => {
 })
 
 router.put('/:playerId', (req, res) => {
-  db.Player.findByIdAndUpdate({_id: req.params.teamId}, req.body, {new: true})
+  db.Player.findByIdAndUpdate({_id: req.params.playerId}, req.body, {new: true})
   .then(player =>{
     res.json(player)
   })

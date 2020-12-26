@@ -14,6 +14,7 @@ playerSchema = new mongoose.Schema({
   player_name: {type: String},
   position: {type: String},
   weight: {type: String},
+  rating: {type: Number}
 })
 
 const Player = mongoose.model('Player', playerSchema);
