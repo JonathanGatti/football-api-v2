@@ -6,7 +6,7 @@ const url = 'mongodb://127.0.0.1:27017/football-app';
 dbUrl = process.env.DB_URL
 
 
-mongoose.connect(dbUrl, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true});
 
 mongoose.Promise = Promise;
 
