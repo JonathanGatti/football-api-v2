@@ -11,4 +11,4 @@ mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.Promise = Promise;
 
 module.exports.Team = require('./team')
-module.exports.Player = require('./Player')
+module.exports.Player = require('./player')
